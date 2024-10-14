@@ -22,7 +22,10 @@ namespace _01SchoolManagementSystem
             }
             set
             {
-                name = value;
+                if(value <= DateTime.Now)
+                {
+                    dateOfBirth = value;
+                }
             }
 
         }
